@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register · Gee Haven</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script><script src="js/app.js"></script>
+</head><body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="Gee Haven"><span>Gee Haven</span></a>
+<nav class="navlinks">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="orders.html">My Orders</a>
+<a class="pill" href="menu.html">Cart (<span data-cart-count>0</span>)</a>
+<span class="pill" data-auth-user style="display:none"></span>
+<a data-admin-link href="admin/index.html" class="pill" style="display:none">🛠️ 后台</a>
+<a data-login-link href="login.html">Login</a>
+<button data-logout-nav class="btn secondary" style="display:none">Logout</button>
+</nav></div></header>
+
+<main class="section"><div class="container"><div class="form-card">
+<h1>Create Account 💗</h1><p class="sub">Join Gee Haven.</p>
+<form id="registerForm"><label>Full Name</label><input id="registerName" required>
+<label>Email</label><input id="registerEmail" type="email" required>
+<label>Password</label><input id="registerPassword" type="password" minlength="6" required>
+<button class="btn">Create Account</button></form>
+<p class="center sub">Already have an account? <a style="color:var(--pink);font-weight:800" href="login.html">Login</a></p>
+</div></div></main><script src="js/auth.js"></script>
+
+<footer class="footer"><div class="container center">© 2026 Gee Haven · Good Food, Good Mood, Good Moments</div></footer>
+
+</body></html>

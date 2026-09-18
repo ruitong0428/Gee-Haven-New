@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gee Haven Admin</title><link rel="stylesheet" href="../css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/supabase.js"></script><script src="../js/app.js"></script></head><body>
+<div class="admin-shell">
+<aside class="admin-side"><img src="../assets/logo.png" alt="Gee Haven"><h2>Gee Haven<br>Admin</h2>
+<a href="index.html">📊 Dashboard</a><a href="orders.html">🧾 Active Orders</a><a href="history.html">🕘 History</a><a href="menu.html">🍜 Menu</a><a href="refunds.html">↩️ Refunds</a><a href="../index.html">🏠 Customer Site</a>
+<button data-logout>🚪 Logout</button></aside><main class="admin-main">
+
+<h1>Dashboard</h1><p class="sub">Gee Haven restaurant management.</p>
+<div class="kpis"><div class="kpi">Total Orders<strong id="kOrders">0</strong></div><div class="kpi">Active Orders<strong id="kActive">0</strong></div><div class="kpi">Paid Sales<strong id="kSales">RM 0.00</strong></div><div class="kpi">Refunded<strong id="kRefunds">0</strong></div></div>
+<div class="card" style="margin-top:20px"><h2>System</h2><p>Customer ordering → Supabase → Admin order queue → Status tracking.</p><p>Menu availability, order history and refund records are included.</p></div>
+</main></div><script src="../js/admin.js"></script></body></html>

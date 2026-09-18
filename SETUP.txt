@@ -1,0 +1,9 @@
+1. Supabase Dashboard -> Project Settings -> API
+2. Copy Project URL and anon/public key.
+3. Paste them into ../js/supabase.js
+4. Supabase SQL Editor -> paste schema.sql -> Run.
+5. Register a Gee Haven account.
+6. Authentication -> Users -> copy that user's UUID.
+7. SQL Editor:
+   update public.profiles set role='admin' where id='PASTE-UUID-HERE';
+8. Open index.html with VS Code Live Server.

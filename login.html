@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Login · Gee Haven</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/supabase.js"></script><script src="../js/app.js"></script>
+</head><body>
+
+<main class="section"><div class="container">
+<div class="form-card" style="max-width:420px;margin:60px auto">
+<h1>🛠️ Gee Haven Admin</h1>
+<p class="sub">员工 / 管理员专用登录，与顾客账号登录分开。</p>
+<form id="adminLoginForm">
+<label>Email</label><input id="adminEmail" type="email" required autocomplete="username">
+<label>Password</label><input id="adminPassword" type="password" required autocomplete="current-password">
+<button class="btn" type="submit">Login</button>
+</form>
+<p class="center sub" style="margin-top:14px">
+不是员工？<a style="color:var(--pink);font-weight:800" href="../login.html">去顾客登录</a>
+</p>
+</div>
+</div></main>
+
+<script src="admin-auth.js"></script>
+</body></html>

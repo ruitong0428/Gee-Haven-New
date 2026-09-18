@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Track Order · Gee Haven</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script><script src="js/app.js"></script>
+</head><body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="Gee Haven"><span>Gee Haven</span></a>
+<nav class="navlinks">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="orders.html">My Orders</a>
+<a class="pill" href="menu.html">Cart (<span data-cart-count>0</span>)</a>
+<span class="pill" data-auth-user style="display:none"></span>
+<a data-admin-link href="admin/index.html" class="pill" style="display:none">🛠️ 后台</a>
+<a data-login-link href="login.html">Login</a>
+<button data-logout-nav class="btn secondary" style="display:none">Logout</button>
+</nav></div></header>
+
+<main class="section"><div class="container"><div class="form-card">
+<h1>Track Your Order</h1><p><b>Order:</b> <span id="trackId">—</span></p>
+<p><b>Current status:</b> <span id="trackCurrent" class="badge">—</span></p>
+<div id="trackSteps" class="status-track"></div>
+<p class="sub">The status is updated by Gee Haven staff.</p>
+</div></div></main><script src="js/track.js"></script>
+
+<footer class="footer"><div class="container center">© 2026 Gee Haven · Good Food, Good Mood, Good Moments</div></footer>
+
+</body></html>
